@@ -1,0 +1,15 @@
+# Python (Backend - Flask)
+venv/
+__pycache__/
+*.pyc
+*.pyo
+temp/
+
+# Node.js (Frontend - React)
+node_modules/
+.npm/
+.env
+
+# Logs
+logs/
+*.log

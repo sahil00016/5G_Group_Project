@@ -1,0 +1,13 @@
+Metadata-Version: 2.2
+Name: chicken-disease-classification
+Version: 0.1
+Requires-Dist: numpy
+Requires-Dist: pandas
+Requires-Dist: tensorflow
+Requires-Dist: scikit-learn
+Requires-Dist: flask
+Requires-Dist: dvc
+Requires-Dist: matplotlib
+Requires-Dist: seaborn
+Requires-Dist: PyYAML
+Dynamic: requires-dist
