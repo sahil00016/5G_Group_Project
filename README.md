@@ -1,7 +1,6 @@
 # 🐔 Chicken Disease Classification – Backend (Flask + TensorFlow)
 
-This project provides a Flask-based backend API for classifying chicken diseases from images using a deep learning model trained with TensorFlow/Keras.
-
+his project provides a backend API for detecting and classifying common chicken diseases from uploaded images. It uses a deep learning model trained with TensorFlow/Keras, and is served through a lightweight Flask API. The backend handles image uploads, performs preprocessing, feeds the image to the model, and returns the predicted disease class with confidence. Ideal for integration with mobile or web apps in poultry health management systems.
 ---
 
 ## 📌 Features
