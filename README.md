@@ -1,37 +1,44 @@
-🐔 Chicken Disease Classification – Backend (Flask + TensorFlow)
+# 🐔 Chicken Disease Classification – Backend (Flask + TensorFlow)
+
 This project provides a Flask-based backend API for classifying chicken diseases from images using a deep learning model trained with TensorFlow/Keras.
 
-📌 Features
-✅ REST API built with Flask
+---
 
-✅ Deep learning model integration (.h5)
+## 📌 Features
 
-✅ Accepts chicken images and returns disease predictions
+- ✅ REST API built with Flask  
+- ✅ Deep learning model integration (`.h5`)  
+- ✅ Accepts chicken images and returns disease predictions  
+- ✅ Scalable for deployment and frontend integration  
+- ✅ Includes preprocessing pipeline for inference
 
-✅ Scalable for deployment and frontend integration
+---
 
-✅ Includes preprocessing pipeline for inference
+## 📁 Project Structure
 
-📁 Project Structure
-bash
-Copy
-Edit
 Chicken-Disease-Classification/
 │
-├── app.py                          # Main Flask app
-├── requirements.txt               # Python dependencies
+├── app.py # Main Flask app
+├── requirements.txt # Python dependencies
 ├── artifacts/
-│   └── model.h5                   # Trained model file
+│ └── model.h5 # Trained model file
 ├── temp/
-│   └── (Uploaded images go here)
+│ └── (Uploaded images go here)
 ├── src/
-│   └── pipelines/
-│       └── predict_pipeline.py    # Model loading and prediction logic
-🚀 Setup Instructions
-1. Clone the repository
-bash
+│ └── pipelines/
+│ └── predict_pipeline.py # Model loading and prediction logic
+
+yaml
 Copy
 Edit
+
+---
+
+## 🚀 Setup Instructions
+
+### 1. Clone the repository
+
+```bash
 git clone https://github.com/yourusername/Chicken-Disease-Classification.git
 cd Chicken-Disease-Classification
 2. Create a virtual environment
@@ -48,7 +55,7 @@ Copy
 Edit
 pip install -r requirements.txt
 4. Place the trained model
-Put your trained model (model.h5) into the artifacts/ folder.
+Put your trained model file (model.h5) into the artifacts/ folder.
 
 🧠 Model Info
 The model is trained to detect common chicken diseases.
@@ -66,17 +73,17 @@ The server will start at http://127.0.0.1:5000
 
 🔍 API Endpoint
 POST /predict
-Request:
+✅ Request:
 Form-data:
 
 file: (image file)
 
-Example using curl:
+🧪 Example using curl:
 bash
 Copy
 Edit
 curl -X POST http://127.0.0.1:5000/predict -F "file=@path_to_image.jpg"
-Response:
+📤 Response:
 json
 Copy
 Edit
@@ -100,7 +107,7 @@ User uploads an image.
 
 Image saved to temp/ folder.
 
-Model processes and predicts class.
+Model processes and predicts the class.
 
 Result returned in JSON format.
 
