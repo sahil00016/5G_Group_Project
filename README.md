@@ -109,4 +109,6 @@ Image saved to temp/ folder.
 Model processes and predicts the class.
 
 Result returned in JSON format.
+![chicken-final](https://github.com/user-attachments/assets/c56824c5-ca2d-4544-a40e-e459186823e7)
+
 
